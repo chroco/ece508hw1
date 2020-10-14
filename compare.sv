@@ -18,10 +18,10 @@ module compare
 	parameter SIZE = 4
 )
 (
-	input logic	[SIZE-1:0]		a,			// number to compare
-	input logic	[SIZE-1:0]		b,			// number to compare against
-	output logic				gt,			// asserted high if a > b, low otherwise
-	output logic				eq			// asserted high if a == b, low otherwise
+	input logic	[SIZE-1:0] a,	// number to compare
+	input logic	[SIZE-1:0] b,	// number to compare against
+	output logic			  	 gt,	// asserted high if a > b, low otherwise
+	output logic			  	 eq 	// asserted high if a == b, low otherwise
 );
 
 assign gt = a > b;

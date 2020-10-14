@@ -5,8 +5,8 @@
 
 CC=iverilog
 CFLAGS=-g2012 
-BIN=tb_rca_8bits
-SRC=tb_rca_8bits.sv fa.sv dut.sv adder_4bits.sv 
+BIN=stimulus
+SRC=compare.sv fulladd4.sv fulladd.sv mux2to1_nbits.sv bcd_adder.sv stimulus.sv 
 
 $(BIN): $(SRC) 
 	$(CC) $(CFLAGS) -o $(BIN) $(SRC)
